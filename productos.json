@@ -1,1 +1,200 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+[
+  {
+    "id": "ambientadores",
+    "nombre": "4 frascos de ambientador",
+    "precio": 6000,
+    "categoria": "Hogar",
+    "descripcion": "Lote de cuatro frascos de ambientador.",
+    "imagen": "./imagenes/ambientadores.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mug-londres",
+    "nombre": "Mug de Londres",
+    "precio": 10000,
+    "categoria": "Hogar",
+    "descripcion": "Mug decorativo con temática de Londres.",
+    "imagen": "./imagenes/mug-londres.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mini-regadera",
+    "nombre": "Mini regadera",
+    "precio": 4000,
+    "categoria": "Decoración",
+    "descripcion": "Regadera pequeña.",
+    "imagen": "./imagenes/mini-regadera.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "repisas-granito",
+    "nombre": "3 repisas de granito",
+    "precio": 60000,
+    "categoria": "Hogar",
+    "descripcion": "Lote de tres repisas de granito.",
+    "imagen": "./imagenes/repisas-granito.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "tempera-12",
+    "nombre": "Estuche de 12 témperas",
+    "precio": 10000,
+    "categoria": "Arte y manualidades",
+    "descripcion": "Estuche de 12 témperas nuevas.",
+    "imagen": "./imagenes/tempera-12.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mini-temperas-18",
+    "nombre": "18 mini témperas",
+    "precio": 8000,
+    "categoria": "Arte y manualidades",
+    "descripcion": "Lote de dieciocho mini témperas.",
+    "imagen": "./imagenes/mini-temperas-18.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "cajita-madera",
+    "nombre": "Cajita de madera",
+    "precio": 6000,
+    "categoria": "Decoración",
+    "descripcion": "Cajita de madera.",
+    "imagen": "./imagenes/cajita-madera.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "tenis-37",
+    "nombre": "Tenis talla 37",
+    "precio": 25000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Tenis talla 37, sin cordones.",
+    "imagen": "./imagenes/tenis-37.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "oasis-3",
+    "nombre": "3 oasis para arreglos",
+    "precio": 5000,
+    "categoria": "Arte y manualidades",
+    "descripcion": "Lote de tres oasis para arreglos.",
+    "imagen": "./imagenes/oasis-3.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "bowl-rosado",
+    "nombre": "Bowl rosado",
+    "precio": 4000,
+    "categoria": "Hogar",
+    "descripcion": "Bowl de color rosado.",
+    "imagen": "./imagenes/bowl-rosado.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mini-matera-negra",
+    "nombre": "Mini matera negra",
+    "precio": 3000,
+    "categoria": "Decoración",
+    "descripcion": "Matera pequeña de color negro.",
+    "imagen": "",
+    "estado": "Disponible"
+  },
+  {
+    "id": "objeto-vidrio-metal",
+    "nombre": "Objeto de vidrio y metal",
+    "precio": 60000,
+    "categoria": "Decoración",
+    "descripcion": "Pieza de vidrio y metal.",
+    "imagen": "./imagenes/objeto-vidrio-metal.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "vaso-cereales",
+    "nombre": "Vaso para cereales o yogur",
+    "precio": 10000,
+    "categoria": "Hogar",
+    "descripcion": "Vaso para llevar cereales o yogur.",
+    "imagen": "./imagenes/vaso-cereales.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "piedras-decorativas",
+    "nombre": "Piedras decorativas",
+    "precio": 3000,
+    "categoria": "Decoración",
+    "descripcion": "Piedras para decoración.",
+    "imagen": "./imagenes/piedras-decorativas.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "caja-carton",
+    "nombre": "Caja de cartón",
+    "precio": 2000,
+    "categoria": "Hogar",
+    "descripcion": "Caja de cartón.",
+    "imagen": "./imagenes/caja-carton.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "retazos-beige",
+    "nombre": "Retazos beige",
+    "precio": 1000,
+    "categoria": "Arte y manualidades",
+    "descripcion": "Retazos de material en tonos beige.",
+    "imagen": "./imagenes/retazos-beige.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "juego-anillos",
+    "nombre": "Juego para lanzar anillos",
+    "precio": 8000,
+    "categoria": "Juegos",
+    "descripcion": "Juego de lanzamiento de anillos.",
+    "imagen": "./imagenes/juego-anillos.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "tapete",
+    "nombre": "Tapete de 60 × 182 cm",
+    "precio": 60000,
+    "categoria": "Hogar",
+    "descripcion": "Tapete usado de 60 × 182 cm.",
+    "imagen": "./imagenes/tapete.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "vestido-s",
+    "nombre": "Vestido vinotinto talla S",
+    "precio": 10000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Largo hasta la rodilla. Ideal para disfraces de vampira o Hermione.",
+    "imagen": "./imagenes/vestido-s.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "corrector-postura",
+    "nombre": "Corrector de postura talla S",
+    "precio": 10000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Corrector de postura usado, talla S.",
+    "imagen": "./imagenes/corrector-postura.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "accesorios-cajita",
+    "nombre": "Accesorios con cajita amarilla",
+    "precio": 3000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Accesorios usados. Incluye la cajita.",
+    "imagen": "./imagenes/accesorios-cajita.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "accesorios-dorados",
+    "nombre": "Accesorios dorados",
+    "precio": 3000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Lote de accesorios usados.",
+    "imagen": "./imagenes/accesorios-dorados.webp",
+    "estado": "Disponible"
+  }
+]
