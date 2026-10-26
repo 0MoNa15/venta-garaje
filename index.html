@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8f5ef"><meta name="description" content="Venta de garaje: artículos de segunda mano, precios y consultas directas por WhatsApp.">
+<title>Venta de garaje · Segunda mano</title>
+<style>
+:root{--green:#315848;--ink:#2b3028;--line:#e6e4dc}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Arial,sans-serif;color:var(--ink);background:#faf8f4}a{text-decoration:none;color:inherit}.wrap{max-width:1110px;margin:auto;padding:0 22px}header{background:white;border-bottom:1px solid var(--line)}header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:20px;padding-bottom:20px}header strong{letter-spacing:.15em;font-size:14px}.whatsapp{color:var(--green);font-size:13px;font-weight:700}.hero{background:#e9eee4;padding:60px 0}.hero small{font-weight:800;letter-spacing:.2em;color:var(--green)}h1{font-family:Georgia,serif;font-size:clamp(36px,6vw,66px);line-height:1.1;max-width:760px;margin:15px 0}h1 em{color:var(--green)}.hero p{line-height:1.75;max-width:560px;color:#5c675c}.section{padding:48px 0 75px}.head{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}h2{font-family:Georgia,serif;font-size:32px;margin:0}#count{font-size:13px;color:#556c59}.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:25px 0}input,select{padding:12px 14px;border:1px solid var(--line);border-radius:9px;background:white;color:var(--ink);font:inherit}input{flex:1;min-width:180px}.notice{background:#fff4e8;border:1px solid #e9cba9;padding:12px 15px;border-radius:9px;margin-bottom:18px;font-size:13px;color:#664b32;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product{min-width:0;background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden;display:flex;flex-direction:column}.media{position:relative;aspect-ratio:1.12;display:grid;place-items:center;background:#eae8df}.media img{width:100%;height:100%;object-fit:cover}.placeholder{text-align:center;font-size:12px;font-weight:700;color:#8a8e82;padding:20px}.placeholder b{display:block;font-size:40px;color:#9aa698;margin-bottom:8px}.status{position:absolute;top:10px;left:10px;background:white;border-radius:20px;font-size:10px;font-weight:800;color:var(--green);padding:7px 10px}.details{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.cat{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#848a7e}h3{font-size:15px;line-height:1.3;margin:0}.desc{font-size:12px;color:#71776e;line-height:1.5;margin:0}.price{font-weight:800;font-size:21px;color:var(--green);margin-top:auto;padding-top:9px}.buy{display:block;text-align:center;background:var(--green);border-radius:8px;color:white;padding:13px 8px;font-size:13px;font-weight:800;margin-top:7px}.is-sold .media{filter:grayscale(1);opacity:.7}.is-sold .buy{background:#e5e5df;color:#656a61}.footer{background:#e8eee4;padding:36px 0;text-align:center}.footer p{font-size:13px;color:#5b675a}@media(max-width:960px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:670px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.details{padding:12px}h3{font-size:13px}.price{font-size:18px}.hero{padding:42px 0}select{flex:1;min-width:0}.footer{padding:30px 0}}
+</style></head><body>
+<header><div class="wrap"><strong>✦ VENTA DE GARAJE</strong><a class="whatsapp" href="https://wa.me/573226630163" target="_blank" rel="noopener">Escríbenos ↗</a></div></header>
+<section class="hero"><div class="wrap"><small>SEGUNDA MANO · NUEVAS HISTORIAS</small><h1>Pequeños hallazgos, <em>grandes oportunidades.</em></h1><p>Encuentra artículos de segunda mano a precios especiales. Pregunta por el que te guste directamente por WhatsApp.</p></div></section>
+<main class="wrap section"><div class="head"><h2>El catálogo</h2><span id="count">Cargando artículos…</span></div><div class="toolbar">
+<input type="search" id="search" aria-label="Buscar artículos" placeholder="Buscar artículos..."><select id="status" aria-label="Filtrar estado"><option value="all">Todos</option><option value="available">Disponibles</option><option value="sold">Vendidos</option></select><select id="order" aria-label="Ordenar"><option value="default">Destacados</option><option value="asc">Menor precio</option><option value="desc">Mayor precio</option></select></div>
+<div class="notice" id="notice" hidden></div><div class="grid" id="grid"></div></main>
+<section class="footer"><div class="wrap"><h2>¿Te gustó algo?</h2><p>Escríbenos y coordinamos tu compra.</p><a class="buy" style="max-width:230px;margin:18px auto 0" href="https://wa.me/573226630163" target="_blank" rel="noopener">Hablar por WhatsApp ↗</a></div></section>
+<script>
+const backup=[["4 frascos de ambientador",6000,"Hogar"],["Mug de Londres",10000,"Hogar"],["Mini regadera",4000,"Decoración"],["3 repisas de granito",60000,"Hogar"],["Estuche de 12 témperas",10000,"Manualidades"],["18 mini témperas",8000,"Manualidades"],["Cajita de madera",6000,"Decoración"],["Tenis talla 37",25000,"Ropa y accesorios"],["3 oasis para arreglos",5000,"Manualidades"],["Bowl rosado",4000,"Hogar"],["Mini matera negra",3000,"Decoración"],["Objeto de vidrio y metal",60000,"Decoración"],["Vaso para cereales o yogur",10000,"Hogar"],["Piedras decorativas",3000,"Decoración"],["Caja de cartón",2000,"Hogar"],["Retazos beige",1000,"Manualidades"],["Juego para lanzar anillos",8000,"Juegos"],["Tapete de 60 × 182 cm",60000,"Hogar"],["Vestido vinotinto talla S",10000,"Ropa y accesorios"],["Corrector de postura talla S",10000,"Ropa y accesorios"],["Accesorios con cajita amarilla",3000,"Ropa y accesorios"],["Accesorios dorados",3000,"Ropa y accesorios"]];
+const sheetId="1AblJQNYQ5x0iob3FxdTizqgOQMNbzIpoCHaWvUVCnvI",gid="1365406418",phone="573226630163";
+const $=id=>document.getElementById(id), money=new Intl.NumberFormat("es-CO",{style:"currency",currency:"COP",maximumFractionDigits:0});
+let items=[];
+function clean(v){return String(v==null?"":v).trim()}
+function imgUrl(v){v=clean(v);return /^https:\/\//i.test(v)||/^(\.\/)?imagenes\/[\w.-]+\.(jpg|jpeg|png|webp|gif)$/i.test(v)?v:""}
+function convert(p){return {name:clean(p.nombre),price:Number(String(p.precio).replace(/[^\d]/g,""))||0,category:clean(p.categoria),description:clean(p.descripcion),image:imgUrl(p.imagen),sold:/^(vendido|vendida|agotado)$/i.test(clean(p.estado))}}
+function render(){
+const q=$("search").value.toLocaleLowerCase("es"),status=$("status").value,order=$("order").value;
+let found=items.filter(x=>(status==="all"|| (status==="sold" ? x.sold:!x.sold))&&[x.name,x.category,x.description].join(" ").toLocaleLowerCase("es").includes(q));
+if(order==="asc")found.sort((a,b)=>a.price-b.price);else if(order==="desc")found.sort((a,b)=>b.price-a.price);else found.sort((a,b)=>Number(a.sold)-Number(b.sold));
+$("count").textContent=items.filter(x=>!x.sold).length+" disponibles · "+items.length+" artículos";
+const grid=$("grid");grid.replaceChildren();
+for(const p of found){
+const card=document.createElement("article");card.className="product"+(p.sold?" is-sold":"");
+const media=document.createElement("div");media.className="media";
+const placeholder=()=>{media.replaceChildren();const d=document.createElement("div");d.className="placeholder";d.textContent="Fotografía próximamente";const b=document.createElement("b");b.textContent="✦";d.prepend(b);media.append(d,badge())};
+function badge(){const b=document.createElement("span");b.className="status";b.textContent=p.sold?"VENDIDO":"DISPONIBLE";return b}
+if(p.image){const img=document.createElement("img");img.src=p.image;img.alt="Fotografía de "+p.name;img.loading="lazy";img.onerror=placeholder;media.append(img,badge())}else placeholder();
+const body=document.createElement("div");body.className="details";
+for(const [tag,cl,t] of [["span","cat",p.category],["h3","",p.name],["p","desc",p.description],["div","price",money.format(p.price)]]){const el=document.createElement(tag);if(cl)el.className=cl;el.textContent=t;body.append(el)}
+const link=document.createElement(p.sold?"span":"a");link.className="buy";
+if(!p.sold){link.href="https://wa.me/"+phone+"?text="+encodeURIComponent("Hola, estoy interesado en comprar este artículo: "+p.name+". ¿Está disponible?");link.target="_blank";link.rel="noopener noreferrer"}link.textContent=p.sold?"Vendido":"Quiero este ↗";body.append(link);card.append(media,body);grid.append(card);
+}}
+async function refresh(){
+try{
+const url="https://docs.google.com/spreadsheets/d/"+sheetId+"/gviz/tq?tqx=out%3Ajson&headers=1&gid="+gid+"&_="+Date.now();
+const response=await fetch(url,{cache:"no-store"});if(!response.ok)throw Error("No es pública");
+const text=await response.text(),a=text.indexOf("{"),b=text.lastIndexOf("}");if(a<0||b<a)throw Error("Formato");
+const data=JSON.parse(text.slice(a,b+1));if(data.status!=="ok"||!data.table)throw Error("No disponible");
+const columns=data.table.cols.map((c,i)=>clean(c.label||c.id||("c"+i)).toLowerCase());
+const names=["nombre","precio","categoria","descripcion","imagen","estado"];
+if(names.some(k=>!columns.includes(k)))throw Error("Columnas faltantes");
+items=data.table.rows.map(row=>{let o={};names.forEach(k=>{const c=row.c[columns.indexOf(k)];o[k]=c&&c.v!=null?c.v:""});return convert(o)}).filter(x=>x.name);
+$("notice").hidden=true;
+}catch(e){if(items.length===0){items=backup.map(p=>({name:p[0],price:p[1],category:p[2],description:"",image:"",sold:false}));}$("notice").hidden=false;$("notice").textContent="Catálogo de referencia: no fue posible consultar los estados actualizados. Confirma el precio y la disponibilidad por WhatsApp antes de comprar."}
+render()
+}
+for(const id of ["search","status","order"])$(id).addEventListener(id==="search"?"input":"change",render);
+refresh();setInterval(()=>{if(!document.hidden)refresh()},120000);document.addEventListener("visibilitychange",()=>{if(!document.hidden)refresh()});
+</script></body></html>
