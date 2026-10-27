@@ -214,5 +214,25 @@
     "descripcion": "Usado. Incluye vaso, tapa con boquilla, rejilla mezcladora y compartimiento inferior.",
     "imagen": "./imagenes/vaso-mezclador.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "sanduchera-home-elements",
+    "nombre": "Sanduchera Home Elements",
+    "precio": 10000,
+    "categoria": "Hogar",
+    "descripcion": "Usada. Enciende y calienta según la descripción. El recubrimiento antiadherente está pelado y presenta desgaste visible. Revisa las 10 fotos para conocer su estado.",
+    "imagen": "./imagenes/sanduchera-home-elements.webp",
+    "fotos": [
+      "./imagenes/sanduchera-home-elements-01.webp",
+      "./imagenes/sanduchera-home-elements-02.webp",
+      "./imagenes/sanduchera-home-elements-03.webp",
+      "./imagenes/sanduchera-home-elements-04.webp",
+      "./imagenes/sanduchera-home-elements-05.webp",
+      "./imagenes/sanduchera-home-elements-06.webp",
+      "./imagenes/sanduchera-home-elements-07.webp",
+      "./imagenes/sanduchera-home-elements-08.webp",
+      "./imagenes/sanduchera-home-elements-09.webp"
+    ],
+    "estado": "Disponible"
   }
 ]

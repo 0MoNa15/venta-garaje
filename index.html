@@ -82,6 +82,12 @@
       <div class="viewer-stage" id="viewer-stage" aria-label="Imagen ampliada. Usa dos dedos para hacer zoom y arrastra para moverla.">
         <img id="viewer-image" class="viewer-image" alt="" draggable="false" />
       </div>
+      <div id="viewer-gallery-controls" class="viewer-gallery-controls" hidden>
+        <button id="viewer-prev" class="viewer-gallery-arrow" type="button" aria-label="Foto anterior">‹ Anterior</button>
+        <span id="viewer-photo-count" aria-live="polite"></span>
+        <button id="viewer-next" class="viewer-gallery-arrow" type="button" aria-label="Foto siguiente">Siguiente ›</button>
+      </div>
+      <div id="viewer-thumbnails" class="viewer-thumbnails" aria-label="Seleccionar una fotografía" hidden></div>
       <div class="viewer-bottom">
         <span class="viewer-hint">Pellizca para ampliar · Arrastra para mover</span>
         <div class="viewer-controls">

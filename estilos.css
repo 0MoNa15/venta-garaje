@@ -33,3 +33,16 @@ body.viewer-open{overscroll-behavior:none}
 .viewer-percent{font-size:12px;font-weight:800;min-width:50px;text-align:center}
 .viewer-reset{color:#fff;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.09);min-height:44px;border-radius:11px;padding:0 12px;font-size:12px;cursor:pointer}
 @media(max-width:730px){.image-viewer{padding-left:9px;padding-right:9px;gap:9px}.viewer-hint{flex-basis:100%;text-align:center;font-size:11px}.viewer-controls{margin:auto}.viewer-top{padding-inline:4px}.viewer-stage{border-radius:7px}}
+
+/* Fotos adicionales del mismo artículo, con navegación y zoom en visor */
+.product-photo-count{position:absolute;right:9px;top:9px;background:rgba(25,35,28,.85);color:#fff;border-radius:99px;padding:6px 10px;font-size:10px;font-weight:800;pointer-events:none}
+.viewer-gallery-controls[hidden],.viewer-thumbnails[hidden]{display:none!important}
+.viewer-gallery-controls{display:flex;justify-content:space-between;align-items:center;gap:8px;width:100%;max-width:1300px;margin:0 auto;font-weight:800;font-size:12px}
+.viewer-gallery-arrow{color:#fff;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.28);padding:8px 12px;min-height:38px;border-radius:9px;cursor:pointer;font-weight:700}
+.viewer-gallery-arrow:hover{background:rgba(255,255,255,.22)}
+.viewer-thumbnails{display:flex;gap:8px;overflow-x:auto;overscroll-behavior-x:contain;padding:4px 2px 9px;width:100%;max-width:1300px;margin:0 auto;scrollbar-width:thin}
+.viewer-thumb{flex:0 0 53px;width:53px;height:58px;background:#39413a;border:2px solid transparent;border-radius:7px;overflow:hidden;cursor:pointer;padding:0}
+.viewer-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.viewer-thumb.is-selected{border-color:#fff;box-shadow:0 0 0 2px #8eae93}
+.viewer-thumb:focus-visible,.viewer-gallery-arrow:focus-visible{outline:3px solid #e7b775;outline-offset:2px}
+@media(max-width:730px){.viewer-gallery-controls{padding:0 4px}.viewer-thumb{flex-basis:48px;width:48px;height:54px}.viewer-thumbnails{gap:6px}}
