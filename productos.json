@@ -324,5 +324,23 @@
     "descripcion": "Blusa de encaje rosado con flores, talla aproximada entre XS y S. Revisar detalles del borde en la imagen.",
     "imagen": "./imagenes/blusa-encaje-rosa.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "vestido-bano-turquesa-s",
+    "nombre": "Vestido de baño turquesa y rosa talla S",
+    "precio": 6000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Vestido de baño de dos piezas, usado. Talla S, turquesa y rosa. Tiene nudos que no se pueden deshacer. Revisar las fotos y condiciones antes de comprar.",
+    "imagen": "./imagenes/vestido-bano-turquesa-s.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "blusa-santa-marta",
+    "nombre": "Blusa recuerdo de Santa Marta",
+    "precio": 5000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Camiseta blanca recuerdo de Santa Marta, Colombia. Talla única, usada y descolorida, con desgaste visible en el estampado y color.",
+    "imagen": "./imagenes/blusa-santa-marta.webp",
+    "estado": "Disponible"
   }
 ]
