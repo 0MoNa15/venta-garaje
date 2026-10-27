@@ -234,5 +234,50 @@
       "./imagenes/sanduchera-home-elements-09.webp"
     ],
     "estado": "Disponible"
+  },
+  {
+    "id": "falda-negra-s",
+    "nombre": "Falda negra talla S",
+    "precio": 12000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "En buen estado. Con ojales metálicos, cadenas decorativas y cremallera dorada.",
+    "imagen": "./imagenes/falda-negra-s.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "delantal-cocina",
+    "nombre": "Delantal de cocina",
+    "precio": 6000,
+    "categoria": "Hogar",
+    "descripcion": "Delantal de cocina con estampado floral rojo y blanco. Usado, en buen estado.",
+    "imagen": "./imagenes/delantal-cocina.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "termo-deportivo",
+    "nombre": "Termo deportivo azul",
+    "precio": 10000,
+    "categoria": "Hogar",
+    "descripcion": "Termo deportivo de segunda mano, con tapa de boquilla abatible y piezas desmontables.",
+    "imagen": "./imagenes/termo-deportivo.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mug-ecuador",
+    "nombre": "Mug de Ecuador",
+    "precio": 4000,
+    "categoria": "Hogar",
+    "descripcion": "Mug de cerámica con diseños de paisajes de Ecuador. Artículo de segunda mano.",
+    "imagen": "./imagenes/mug-ecuador.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "vestido-bano-t32",
+    "nombre": "Vestido de baño de dos piezas talla 32",
+    "precio": 4000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Usado, talla 32. Tiene manchas visibles; revisa las fotografías antes de comprar.",
+    "imagen": "./imagenes/vestido-bano-t32.webp",
+    "estado": "Disponible"
   }
 ]
