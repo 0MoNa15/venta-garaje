@@ -65,10 +65,10 @@
   {
     "id": "tenis-37",
     "nombre": "Tenis talla 37",
-    "precio": 25000,
+    "precio": 15000,
     "categoria": "Ropa y accesorios",
-    "descripcion": "Tenis talla 37, sin cordones.",
-    "imagen": "./imagenes/tenis-37.webp",
+    "descripcion": "Tenis talla 37, usados, color beige, blanco y rosado. Con señales de uso visibles (ver fotos).",
+    "imagen": "./imagenes/tenis-37-15000.webp",
     "estado": "Disponible"
   },
   {
