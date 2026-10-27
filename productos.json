@@ -95,7 +95,7 @@
     "precio": 3000,
     "categoria": "Decoración",
     "descripcion": "Matera pequeña de color negro.",
-    "imagen": "",
+    "imagen": "./imagenes/mini-matera-negra.webp",
     "estado": "Disponible"
   },
   {
@@ -195,6 +195,24 @@
     "categoria": "Ropa y accesorios",
     "descripcion": "Lote de accesorios usados.",
     "imagen": "./imagenes/accesorios-dorados.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mug-ceramica",
+    "nombre": "Mug de cerámica",
+    "precio": 10000,
+    "categoria": "Hogar",
+    "descripcion": "Nuevo, guardado y sin uso. Diseño por ambos lados.",
+    "imagen": "./imagenes/mug-ceramica.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "vaso-mezclador",
+    "nombre": "Vaso mezclador",
+    "precio": 12000,
+    "categoria": "Hogar",
+    "descripcion": "Usado. Incluye vaso, tapa con boquilla, rejilla mezcladora y compartimiento inferior.",
+    "imagen": "./imagenes/vaso-mezclador.webp",
     "estado": "Disponible"
   }
 ]
