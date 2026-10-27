@@ -125,6 +125,122 @@
     }
   }
 
+
+  // Visor accesible con zoom táctil (pinza), rueda, arrastre y controles.
+  const viewer = document.getElementById('image-viewer');
+  const viewerStage = document.getElementById('viewer-stage');
+  const viewerImage = document.getElementById('viewer-image');
+  const viewerTitle = document.getElementById('image-viewer-title');
+  const viewerLevel = document.getElementById('viewer-zoom-level');
+  const viewerClose = document.getElementById('viewer-close');
+  let zoom = 1, panX = 0, panY = 0;
+  let previousFocus = null, lockedScroll = 0;
+  const activePointers = new Map();
+  const limit = (n,min,max) => Math.min(max,Math.max(min,n));
+  const maxZoom = 5;
+
+  function clampPan() {
+    if (zoom <= 1) { panX=0; panY=0; return; }
+    const maxX = Math.max(0,(viewerImage.offsetWidth*zoom-viewerStage.clientWidth)/2);
+    const maxY = Math.max(0,(viewerImage.offsetHeight*zoom-viewerStage.clientHeight)/2);
+    panX = limit(panX,-maxX,maxX);
+    panY = limit(panY,-maxY,maxY);
+  }
+  function renderZoom() {
+    clampPan();
+    viewerImage.style.transform = 'translate3d('+panX+'px,'+panY+'px,0) scale('+zoom+')';
+    viewerLevel.textContent = Math.round(zoom*100)+' %';
+    document.getElementById('viewer-zoom-out').disabled = zoom <= 1;
+    document.getElementById('viewer-zoom-in').disabled = zoom >= maxZoom;
+  }
+  function setZoom(next) {
+    zoom = limit(next,1,maxZoom);
+    renderZoom();
+  }
+  function openViewer(product) {
+    if (!product.imagen) return;
+    previousFocus = document.activeElement;
+    lockedScroll = window.scrollY;
+    viewerTitle.textContent = product.nombre;
+    viewerImage.src = product.imagen;
+    viewerImage.alt = 'Foto ampliada: ' + product.nombre;
+    viewer.hidden = false;
+    document.body.classList.add('viewer-open');
+    document.body.style.position = 'fixed';
+    document.body.style.top = '-' + lockedScroll + 'px';
+    document.body.style.width = '100%';
+    activePointers.clear();
+    zoom=1;panX=0;panY=0;renderZoom();
+    viewerClose.focus({preventScroll:true});
+  }
+  function closeViewer() {
+    if (viewer.hidden) return;
+    viewer.hidden = true;
+    viewerImage.removeAttribute('src');
+    activePointers.clear();
+    document.body.classList.remove('viewer-open');
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.width = '';
+    window.scrollTo(0,lockedScroll);
+    if (previousFocus && previousFocus.isConnected) previousFocus.focus({preventScroll:true});
+  }
+  viewerImage.addEventListener('load',renderZoom);
+  viewerClose.addEventListener('click',closeViewer);
+  document.getElementById('viewer-zoom-in').addEventListener('click',()=>setZoom(zoom*1.5));
+  document.getElementById('viewer-zoom-out').addEventListener('click',()=>setZoom(zoom/1.5));
+  document.getElementById('viewer-zoom-reset').addEventListener('click',()=>setZoom(1));
+  viewer.addEventListener('click',(e)=>{if(e.target===viewer)closeViewer()});
+  document.addEventListener('keydown',(e)=>{
+    if(viewer.hidden)return;
+    if(e.key==='Escape'){e.preventDefault();closeViewer();return;}
+    if(e.key==='+'||e.key==='='){e.preventDefault();setZoom(zoom*1.5);}
+    if(e.key==='-'){e.preventDefault();setZoom(zoom/1.5);}
+    if(e.key==='0'){e.preventDefault();setZoom(1);}
+    if(e.key==='Tab'){
+      const list=Array.from(viewer.querySelectorAll('button:not([disabled])'));
+      const current=list.indexOf(document.activeElement);
+      if(e.shiftKey && (current===0 || current===-1)){e.preventDefault();list[list.length-1].focus();}
+      else if(!e.shiftKey && (current===list.length-1 || current===-1)){e.preventDefault();list[0].focus();}
+    }
+  });
+  viewerStage.addEventListener('wheel',(e)=>{
+    if(viewer.hidden)return;
+    e.preventDefault();
+    setZoom(zoom*(e.deltaY<0?1.15:1/1.15));
+  },{passive:false});
+  viewerStage.addEventListener('dblclick',()=>setZoom(zoom>1?1:2));
+  const distance=(a,b)=>Math.hypot(a.x-b.x,a.y-b.y);
+  const midpoint=(a,b)=>({x:(a.x+b.x)/2,y:(a.y+b.y)/2});
+  viewerStage.addEventListener('pointerdown',(e)=>{
+    if(viewer.hidden)return;
+    e.preventDefault();
+    viewerStage.setPointerCapture(e.pointerId);
+    activePointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    if(activePointers.size===1)viewerStage.classList.add('is-dragging');
+  });
+  viewerStage.addEventListener('pointermove',(e)=>{
+    if(!activePointers.has(e.pointerId))return;
+    e.preventDefault();
+    const old=Array.from(activePointers.values());
+    activePointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    const now=Array.from(activePointers.values());
+    if(now.length===1 && zoom>1){panX+=now[0].x-old[0].x;panY+=now[0].y-old[0].y;}
+    else if(now.length===2 && old.length===2){
+      const prevDist=distance(old[0],old[1]);
+      const nextDist=distance(now[0],now[1]);
+      if(prevDist>0)zoom=limit(zoom*nextDist/prevDist,1,maxZoom);
+      const prevMid=midpoint(old[0],old[1]), nextMid=midpoint(now[0],now[1]);
+      panX+=nextMid.x-prevMid.x;panY+=nextMid.y-prevMid.y;
+    }
+    renderZoom();
+  });
+  function endPointer(e){activePointers.delete(e.pointerId);if(!activePointers.size)viewerStage.classList.remove('is-dragging')}
+  viewerStage.addEventListener('pointerup',endPointer);
+  viewerStage.addEventListener('pointercancel',endPointer);
+  viewerStage.addEventListener('lostpointercapture',endPointer);
+  window.addEventListener('resize',()=>{if(!viewer.hidden)renderZoom()});
+
   function card(p,index) {
     const article=document.createElement('article');
     article.className='product'+(p.vendido?' is-sold':'');
@@ -150,10 +266,16 @@
       return element;
     }
     if (p.imagen) {
+      const zoomButton=document.createElement('button');
+      zoomButton.type='button';
+      zoomButton.className='product-zoom-trigger';
+      zoomButton.setAttribute('aria-label','Ampliar fotografía de '+p.nombre);
       const img=document.createElement('img');
       img.src=p.imagen;img.alt=`Fotografía: ${p.nombre}`;img.loading='lazy';
       img.addEventListener('error',placeholder,{once:true});
-      media.append(img,badge());
+      zoomButton.append(img);
+      zoomButton.addEventListener('click',()=>openViewer(p));
+      media.append(zoomButton,badge());
     } else placeholder();
     const body=document.createElement('div');body.className='product-body';
     const cat=document.createElement('span');cat.className='product-category';cat.textContent=p.categoria;

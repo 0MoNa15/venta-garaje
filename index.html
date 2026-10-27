@@ -14,6 +14,14 @@
     <script src="app.js" defer></script>
   </head>
   <body>
+    <aside class="sale-notice" aria-label="Condiciones de venta">
+      <div class="container sale-notice-inner">
+        <strong>ARTÍCULOS DE SEGUNDA MANO</strong>
+        <span class="sale-notice-separator" aria-hidden="true">•</span>
+        <strong>NO SE ACEPTAN DEVOLUCIONES</strong>
+        <span class="sale-notice-detail">Revisa las fotos y consulta el estado antes de comprar.</span>
+      </div>
+    </aside>
     <header class="header">
       <div class="container header-content">
         <a class="brand" href="./" aria-label="Volver al inicio"><span class="brand-mark">✦</span><span>VENTA <strong>DE GARAJE</strong></span></a>
@@ -35,7 +43,7 @@
           <div>
             <div class="section-overline">EL CATÁLOGO</div>
             <h2 id="catalog-title">Encuentra tu próximo <em>tesoro</em></h2>
-            <p class="catalogue-subtitle">Todos los precios están en pesos colombianos (COP).</p>
+            <p class="catalogue-subtitle">Todos los precios están en pesos colombianos (COP). Toca una foto para ampliarla.</p>
           </div>
           <div class="inventory-count" id="inventory-count" aria-live="polite">Cargando artículos…</div>
         </div>
@@ -63,6 +71,27 @@
         <div class="container closing-inner"><span class="closing-star" aria-hidden="true">✳</span><div><h2>¿Viste algo que te gustó?</h2><p>Escríbenos y coordinamos los detalles de tu compra.</p></div><a id="bottom-whatsapp" href="https://wa.me/573226630163" target="_blank" rel="noopener noreferrer">Hablar por WhatsApp ↗</a></div>
       </section>
     </main>
-    <footer class="footer"><div class="container"><span>VENTA DE GARAJE · 2026</span><span>Artículos de segunda mano · Compra con tranquilidad</span></div></footer>
+    <div class="image-viewer" id="image-viewer" role="dialog" aria-modal="true" aria-labelledby="image-viewer-title" hidden>
+      <div class="viewer-top">
+        <div class="viewer-heading">
+          <span>FOTOGRAFÍA DEL ARTÍCULO</span>
+          <h2 id="image-viewer-title"></h2>
+        </div>
+        <button type="button" class="viewer-icon-button" id="viewer-close" aria-label="Cerrar imagen">✕</button>
+      </div>
+      <div class="viewer-stage" id="viewer-stage" aria-label="Imagen ampliada. Usa dos dedos para hacer zoom y arrastra para moverla.">
+        <img id="viewer-image" class="viewer-image" alt="" draggable="false" />
+      </div>
+      <div class="viewer-bottom">
+        <span class="viewer-hint">Pellizca para ampliar · Arrastra para mover</span>
+        <div class="viewer-controls">
+          <button type="button" class="viewer-icon-button" id="viewer-zoom-out" aria-label="Alejar imagen">−</button>
+          <span class="viewer-percent" id="viewer-zoom-level" aria-live="polite">100 %</span>
+          <button type="button" class="viewer-icon-button" id="viewer-zoom-in" aria-label="Acercar imagen">+</button>
+          <button type="button" class="viewer-reset" id="viewer-zoom-reset">Restablecer</button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"><div class="container"><span>VENTA DE GARAJE · 2026</span><span>Artículos de segunda mano · Sin devoluciones</span></div></footer>
   </body>
 </html>
