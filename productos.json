@@ -279,5 +279,50 @@
     "descripcion": "Usado, talla 32. Tiene manchas visibles; revisa las fotografías antes de comprar.",
     "imagen": "./imagenes/vestido-bano-t32.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "bata-extra-larga",
+    "nombre": "Bata extra larga azul",
+    "precio": 3000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Usada, color azul turquesa. Tiene un roto en una manga. Largo aproximado hasta los tobillos en persona de 1,60 m.",
+    "imagen": "./imagenes/bata-extra-larga.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "pijama-dos-piezas",
+    "nombre": "Pijama de dos piezas",
+    "precio": 8000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Blusa gris talla S y pantalón estampado talla M o L. Tela suave, en muy buen estado.",
+    "imagen": "./imagenes/pijama-dos-piezas.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "mocasines-rosados-t37",
+    "nombre": "Mocasines rosados talla 37",
+    "precio": 5000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Zapatos usados color rosado, talla 37, con detalle metálico decorativo.",
+    "imagen": "./imagenes/mocasines-rosados-t37.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "blusa-bershka-verde-xs",
+    "nombre": "Blusa Bershka verde talla XS",
+    "precio": 4000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Blusa de segunda mano, verde oliva, tela acanalada, talla XS, en buen estado.",
+    "imagen": "./imagenes/blusa-bershka-verde-xs.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "blusa-encaje-rosa",
+    "nombre": "Blusa de encaje rosada XS-S",
+    "precio": 4000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Blusa de encaje rosado con flores, talla aproximada entre XS y S. Revisar detalles del borde en la imagen.",
+    "imagen": "./imagenes/blusa-encaje-rosa.webp",
+    "estado": "Disponible"
   }
 ]
