@@ -342,5 +342,41 @@
     "descripcion": "Camiseta blanca recuerdo de Santa Marta, Colombia. Talla única, usada y descolorida, con desgaste visible en el estampado y color.",
     "imagen": "./imagenes/blusa-santa-marta.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "flores-artificiales-matrimonio",
+    "nombre": "Flores pequeñas artificiales",
+    "precio": 4000,
+    "categoria": "Matrimonio",
+    "descripcion": "Flores pequeñas artificiales para decoración de matrimonio. Artículos usados, en el estado que muestran las fotografías. Sin devoluciones.",
+    "imagen": "./imagenes/flores-artificiales-matrimonio.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "diadema-bride-despedida",
+    "nombre": "Diadema BRIDE para despedida de soltera",
+    "precio": 15000,
+    "categoria": "Matrimonio",
+    "descripcion": "Diadema hecha a mano con perlas y brillos. Usada; presenta una mancha visible en la punta (ver imagen). No se aceptan devoluciones.",
+    "imagen": "./imagenes/diadema-bride-despedida.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "banda-bride-to-be",
+    "nombre": "Banda Bride to Be para despedida",
+    "precio": 5000,
+    "categoria": "Matrimonio",
+    "descripcion": "Banda blanca con letras doradas 'Bride to Be' para despedida de soltera. Artículo de segunda mano.",
+    "imagen": "./imagenes/banda-bride-to-be.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "velos-despedida-dos",
+    "nombre": "2 velos para despedida de soltera",
+    "precio": 6000,
+    "categoria": "Matrimonio",
+    "descripcion": "Lote de 2 velos blancos de segunda mano para despedida de soltera, en buen estado, tal como se ven en las fotos.",
+    "imagen": "./imagenes/velos-despedida-dos.webp",
+    "estado": "Disponible"
   }
 ]
