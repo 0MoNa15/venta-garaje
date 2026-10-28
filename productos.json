@@ -159,7 +159,7 @@
     "categoria": "Hogar",
     "descripcion": "Tapete usado de 60 × 182 cm.",
     "imagen": "./imagenes/tapete.webp",
-    "estado": "Disponible"
+    "estado": "Vendido"
   },
   {
     "id": "vestido-s",
