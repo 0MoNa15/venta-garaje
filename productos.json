@@ -100,11 +100,11 @@
   },
   {
     "id": "objeto-vidrio-metal",
-    "nombre": "Objeto de vidrio y metal",
-    "precio": 60000,
+    "nombre": "Chimenea decorativa",
+    "precio": 55000,
     "categoria": "Decoración",
-    "descripcion": "Pieza de vidrio y metal.",
-    "imagen": "./imagenes/objeto-vidrio-metal.webp",
+    "descripcion": "Chimenea decorativa de vidrio y metal, usada. Solo uso decorativo; no usar con fuego ni combustibles. Nueva costó $180.000.",
+    "imagen": "./imagenes/chimenea-decorativa-55000.jpg",
     "estado": "Disponible"
   },
   {
