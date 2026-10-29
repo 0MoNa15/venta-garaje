@@ -414,5 +414,37 @@
     "descripcion": "Cafetera italiana de aluminio, usada, capacidad aproximada de 6 tazas. Le falta solamente la goma redonda de sellado (empaque) para ponerla a funcionar; revisar fotos.",
     "imagen": "./imagenes/cafetera-primula-express.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "corbata-botonier-azul-claro",
+    "nombre": "Corbata y botonier azul claro",
+    "precio": 12000,
+    "categoria": "Matrimonio",
+    "descripcion": "Conjunto nuevo para matrimonio: corbata azul claro y botonier floral a juego. Revisar fotografía.",
+    "imagen": "./imagenes/corbata-botonier-azul-claro.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "tenis-crema-negro-37",
+    "nombre": "Tenis beige y negro talla 37",
+    "precio": 60000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Tenis talla 37, color beige, blanco y negro. Usados una sola vez; suelas con señales de uso (ver fotografía). Marca no visible en fotos.",
+    "imagen": "./imagenes/tenis-crema-negro-37.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "blusa-lila-pink-rose-s",
+    "nombre": "Blusa lila Pink Rose talla S",
+    "precio": 40000,
+    "categoria": "Ropa y accesorios",
+    "descripcion": "Blusa lila Pink Rose talla S, con fruncido, mangas abullonadas y tiras. Incluye 4 fotografías para revisar la prenda, su tejido y etiqueta.",
+    "imagen": "./imagenes/blusa-lila-pink-rose-s.webp",
+    "fotos": [
+      "./imagenes/blusa-lila-pink-rose-s-foto-2.webp",
+      "./imagenes/blusa-lila-pink-rose-s-foto-3.webp",
+      "./imagenes/blusa-lila-pink-rose-s-foto-4.webp"
+    ],
+    "estado": "Disponible"
   }
 ]
