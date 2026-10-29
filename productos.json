@@ -378,5 +378,41 @@
     "descripcion": "Lote de 2 velos blancos de segunda mano para despedida de soltera, en buen estado, tal como se ven en las fotos.",
     "imagen": "./imagenes/velos-despedida-dos.webp",
     "estado": "Disponible"
+  },
+  {
+    "id": "frasco-vidrio-tapa-vacio",
+    "nombre": "Frasco de vidrio con tapa (vacío)",
+    "precio": 2000,
+    "categoria": "Hogar",
+    "descripcion": "Frasco de vidrio vacío de 420 ml con tapa metálica, usado y limpio. Conserva su etiqueta de aceite de coco.",
+    "imagen": "./imagenes/frasco-vidrio-tapa-vacio.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "aviso-madera-matrimonio",
+    "nombre": "Aviso decorativo de madera para matrimonio",
+    "precio": 5000,
+    "categoria": "Matrimonio",
+    "descripcion": "Aviso de madera usado con la frase «Ahí viene la mujer por la que tanto oraste». Incluye cintas para colgar; ver fotos.",
+    "imagen": "./imagenes/aviso-madera-matrimonio.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "tapete-ikea-sortso",
+    "nombre": "Tapete IKEA SORTSÖ 55 × 85 cm",
+    "precio": 20000,
+    "categoria": "Hogar",
+    "descripcion": "Tapete IKEA SORTSÖ de segunda mano, beige claro, tejido con flecos. Medidas: 55 × 85 cm. Ver fotografías y etiqueta.",
+    "imagen": "./imagenes/tapete-ikea-sortso.webp",
+    "estado": "Disponible"
+  },
+  {
+    "id": "cafetera-primula-express",
+    "nombre": "Cafetera italiana Primula Express",
+    "precio": 30000,
+    "categoria": "Hogar",
+    "descripcion": "Cafetera italiana de aluminio, usada, capacidad aproximada de 6 tazas. Le falta solamente la goma redonda de sellado (empaque) para ponerla a funcionar; revisar fotos.",
+    "imagen": "./imagenes/cafetera-primula-express.webp",
+    "estado": "Disponible"
   }
 ]
